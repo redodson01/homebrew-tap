@@ -5,21 +5,21 @@
 class GitBetterBranch < Formula
   desc "A better git branch viewer for repositories with long branch names, worktrees, and many remotes"
   homepage "https://github.com/redodson01/git-better-branch"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/redodson01/git-better-branch/releases/download/v0.1.0/git-better-branch_0.1.0_darwin_amd64.tar.gz"
-      sha256 "4caaca19a520a664dae6f8204119112e5cf267299359ec51b65c2de8a3eea3a7"
+      url "https://github.com/redodson01/git-better-branch/releases/download/v0.1.1/git-better-branch_0.1.1_darwin_amd64.tar.gz"
+      sha256 "f200362ff553f494d25bc423b353edffb5b2362a9bbf82abf0ae9e22249c7674"
 
       define_method(:install) do
         bin.install "git-better-branch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/redodson01/git-better-branch/releases/download/v0.1.0/git-better-branch_0.1.0_darwin_arm64.tar.gz"
-      sha256 "20f457218d8e9b8f7a5ab928bdda200d30b73d714cf57468239f932134efb9b8"
+      url "https://github.com/redodson01/git-better-branch/releases/download/v0.1.1/git-better-branch_0.1.1_darwin_arm64.tar.gz"
+      sha256 "844c800916789990631ca12e1c4212598284fb1b07c90d526e04eea273a50c22"
 
       define_method(:install) do
         bin.install "git-better-branch"
@@ -29,15 +29,15 @@ class GitBetterBranch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/redodson01/git-better-branch/releases/download/v0.1.0/git-better-branch_0.1.0_linux_amd64.tar.gz"
-      sha256 "248bc3754511fe56117819236321e17361e86c37b5a626bb442084dbe3493e92"
+      url "https://github.com/redodson01/git-better-branch/releases/download/v0.1.1/git-better-branch_0.1.1_linux_amd64.tar.gz"
+      sha256 "850c019b6655ed1c687c2fbf78f80dc525ce50fac382a3a7eca26ac233bce6c9"
       define_method(:install) do
         bin.install "git-better-branch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/redodson01/git-better-branch/releases/download/v0.1.0/git-better-branch_0.1.0_linux_arm64.tar.gz"
-      sha256 "ee72bfcbd8d85a4c5493aeb853174577814a5e538d1b15bb29db9bab563fa6c3"
+      url "https://github.com/redodson01/git-better-branch/releases/download/v0.1.1/git-better-branch_0.1.1_linux_arm64.tar.gz"
+      sha256 "db6dfdae074a7c0862dc1ccf22f9c4e51f13812c731553088b64e3b55677fa12"
       define_method(:install) do
         bin.install "git-better-branch"
       end
